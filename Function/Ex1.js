@@ -23,3 +23,12 @@ function marry(boy, girl){
 }
 
 console.log(marry("Ram","Sita"))
+
+//Function with undefined number of arguments
+function my_choices(...args){ //We can use ```...args``` if we donot know the length of arguments to be passed
+    for (i=0; i<(args.length); i++){
+        console.log(`I like ${args[i]}.`)
+    }
+}
+
+my_choices("apple","banana", "mango")
