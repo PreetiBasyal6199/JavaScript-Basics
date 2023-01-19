@@ -13,3 +13,13 @@ function take_param(person1,person2){
 }
 //Function calling with parameters
 take_param("Ram", "Sita")
+
+
+//Returning result in function
+function marry(boy, girl){
+    console.log('argument',arguments) //==> returns argument object: [Arguments] { '0': 'Ram', '1': 'Sita' }
+    console.log(Array.from(arguments)) //==>  [ 'Ram', 'Sita' ]
+    return `${boy} is married to ${girl}.`
+}
+
+console.log(marry("Ram","Sita"))
