@@ -25,3 +25,21 @@ console.log(`The value of isValid outside the function is: ${isValid}`)
 three()
 //The value of isValid outside the function is: false
 
+
+// Defining the scope of variables
+function sayMyName(){
+    var a = 'a' ;
+    return  function findMyName(){
+        console.log(`The value of a is ${a}`) // 'a'
+        console.log(`The value of c is ${c}`) //This will give an error; c is not defined
+        var b ='b' ;
+        return function printMyName(){
+            console.log(`The value of a is ${a}`) //'a'
+            var c = 'c';
+            return "Andrew Meth"
+        }
+    }
+}
+
+console.log(sayMyName()()())
+
