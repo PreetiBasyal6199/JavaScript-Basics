@@ -26,7 +26,7 @@ three()
 //The value of isValid outside the function is: false
 
 
-// Defining the scope of variables
+// Defining the scope of variables(Lexical Scope)
 function sayMyName(){
     var a = 'a' ;
     return  function findMyName(){
