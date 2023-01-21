@@ -2,18 +2,18 @@
 
 
 //1. gives method access to their objects
-// const obj ={
-//     name : "Billi",
-//     sing: function(){
-//         return "Lalala "+ this.name  //here this refers to obj ; this keywordis similar to self keyword in python
-//     },
-//     sing_again(){
-//         return this.sing() + '!' // we can use the sing()function here
-//     }
-// }
+const obj ={
+    name : "Billi",
+    sing: function(){
+        return "Lalala "+ this.name  //here this refers to obj ; this keywordis similar to self keyword in python
+    },
+    sing_again(){
+        return this.sing() + '!' // we can use the sing()function here
+    }
+}
 
-// console.log(obj.sing())
-// console.log(obj.sing_again())
+console.log(obj.sing())
+console.log(obj.sing_again())
 
 
 //2. Executes same code for different objects
