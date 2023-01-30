@@ -1,4 +1,4 @@
-const multiplyBy = function (num1){
+const multiplyBy = function (num1){    // Here  multiPly By is a higher order function as it takes function as a parameter and returns function
     return function(num2){
         return num1*num2
     }
