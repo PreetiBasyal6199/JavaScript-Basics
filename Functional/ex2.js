@@ -20,7 +20,7 @@ console.log(only_persons_name)          // [ 'Ram', 'Shyam', 'Gita', 'Hari', 'Ni
 
 var names = persons.map(function(person){
     return person.name
-})
+})  
 console.log(names)
 
 var person_details = persons.map(function(person){
@@ -36,5 +36,12 @@ console.log(person_details)
     'Nilam is a Teacher',
     'Mina is a Teacher'
   ] */
+
+
+// Using arrow functions with map
+
+var arrow_names = persons.map((person) => person.name)
+console.log(arrow_names)            //  [ 'Ram', 'Shyam', 'Gita', 'Hari', 'Nilam', 'Mina' ]
+
 
 
