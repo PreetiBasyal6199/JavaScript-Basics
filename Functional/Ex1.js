@@ -30,3 +30,16 @@ var students = persons.filter(function(person){
     return person.level==="Student"
 })
 console.log(students)
+
+
+// Implementing higher order function with filter
+
+var is_teacher = function(person){
+    return person.level==="Teacher"
+}
+
+var new_teachers =persons.filter(is_teacher)
+
+console.log(new_teachers)
+
+// var except_teachers = persons.reject(is_teacher)
