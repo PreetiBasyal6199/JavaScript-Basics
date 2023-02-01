@@ -17,5 +17,16 @@ for (var count=0; count<persons.length; count++){
 }
 console.log(new_list)   
 
+// Implementing the above code by using Filter
 
+var teachers = persons.filter(function(person){
+    return person.level==="Teacher"
+})
+console.log(teachers)
 
+// similarly for students
+
+var students = persons.filter(function(person){
+    return person.level==="Student"
+})
+console.log(students)
