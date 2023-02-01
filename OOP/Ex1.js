@@ -30,3 +30,17 @@ function people (first_name, last_name, address){
 let obj1= new people('ram', "khanal", "Ktm")
 
 console.log(obj1.address)   // Ktm
+
+
+// using Object.create() method
+
+const animal ={
+    is_hungry : false,
+    detail(){
+        return  `The animal is ${this.name}. Is the animal hungry: ${this.is_hungry}`
+    }
+}
+
+const animal1 = Object.create(animal)   // creates an object animal1
+animal1.name = "Cat"                    // assign property to the object
+console.log(animal1.detail())         // The animal is Cat. Is the animal hungry: false
