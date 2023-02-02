@@ -22,6 +22,15 @@ function1(10)
 1
 
 */
-    
+
+// Partial Function
+
+let mulliply = (a,b,c) => a*b*c ;
+console.log(mulliply(2,3,4))                // 24
+
+// Same implementation using partial function
+
+let multiplyBy2 = mulliply.bind(null, 2)
+console.log(multiplyBy2(3,4))               //24
 
 
