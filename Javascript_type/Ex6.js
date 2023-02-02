@@ -39,3 +39,23 @@ number2 > 0                                         // write the condition here
 
 console.log(parseInt('9.8') ==10)           // false
 
+
+//Switch case
+
+let input_number = 5 ;
+
+switch(true){
+    case input_number>0 :
+        console.log("Switch The number is positive") ;
+        break;
+    case input_number<0:
+        console.log(" Switch The number is negative")  ;
+        break;
+    case input_number==0:
+        console.log("Switch The number is Zero.")  ;
+        break;
+    default:
+        console.log("Switch The input number is not number")  ;
+
+}
+
