@@ -14,3 +14,17 @@ function getMaxNumber(arr){
 }
 
 console.log(getMaxNumber(array)) // should return 3
+
+
+// Next Method Using for loop
+
+function maxNumber(arr){
+  let max =0
+  for(const item of arr){
+    if(item>max){
+      max = item
+    }
+  }
+  return max
+}
+console.log(maxNumber(array))
