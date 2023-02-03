@@ -24,3 +24,17 @@ func1(2,2).then(function(){
 })
 
 // This will give result: Congratulations, both passed values are equal to each other.
+
+
+//We can also pass message to the resolve() and reject() function.
+
+var promise = new Promise(function(resolve, reject){
+    const mark =40
+    if (mark>40){
+        resolve("Wow...")
+    }
+    reject("Opps")
+})
+
+promise.then(result =>console.log(result + " You have passed")).catch(result => console.log(result + " You failed."))
+// Opps You failed.
