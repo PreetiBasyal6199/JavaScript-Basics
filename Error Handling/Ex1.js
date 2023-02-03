@@ -1,4 +1,4 @@
-
+// Synchronous code Error handling
 try{
     a=4
     c=a/b ;
@@ -10,5 +10,7 @@ catch(error){
 
 finally{
     console.log("Hey you got the solution")       // This block of code is always executed
-}
+}   
+
+// Asynchronous code Error handling
 
