@@ -28,8 +28,8 @@ func1(2,2).then(function(){
 
 //We can also pass message to the resolve() and reject() function.
 
-var promise = new Promise(function(resolve, reject){
-    const mark =40
+const promise = new Promise(function(resolve, reject){
+    const mark =50
     if (mark>40){
         resolve("Wow...")
     }
@@ -38,3 +38,16 @@ var promise = new Promise(function(resolve, reject){
 
 promise.then(result =>console.log(result + " You have passed")).catch(result => console.log(result + " You failed."))
 // Opps You failed.
+
+
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "Hiiii Promise1")
+})
+
+const promise2 = new Promise((resolve, reject) => {
+    setTimeout(resolve, 100, "Hello Promise2")
+})
+
+Promise.all([promise, promise1,promise2]).then(results =>{      //[ 'Wow...', 'Hiiii Promise1', 'Hello Promise2' ]
+    console.log(results)
+} )
