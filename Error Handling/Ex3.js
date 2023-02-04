@@ -29,9 +29,15 @@ const getData = async function (){
         console.log("Opppps, There is something wrong")
     }
     
-
-    
 }
 
-    
+// The above function implementation using for await of
 
+const newData = async function (){
+    const arrofPromises = urls.map(url => fetch(url))
+    for await (let resp of arrofPromises ){
+        const data = await resp.json()
+        console.log(data)
+    }
+}
+newData(urls)
