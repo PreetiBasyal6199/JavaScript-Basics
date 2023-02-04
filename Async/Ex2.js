@@ -1,7 +1,19 @@
 // Object Spread Operator
-
-
 //Example1
+let arr1 = [1,2,3]
+let [a,b,c] = arr1
+console.log(a)  //1
+console.log(c)  //3
+
+///Example 2
+
+let others
+[a, b, ...others] = [10, 20, 30, 40, 50];
+
+console.log(others);    // [30,40,50]
+
+//Example 3
+
 const animals ={
     tiger: 20,
     lion : 10,
@@ -23,7 +35,7 @@ const getAnimals = function(p1,p2,p3){
 }
 getAnimals(tiger, lion, rest)
 
-// Example2
+// Example 4
 
 const array1= [1,2,3,4,5]
 
