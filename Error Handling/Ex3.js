@@ -12,3 +12,19 @@ Promise.all(urls.map(url =>{
     console.log(results[0]),
     console.log(results[0])
 })
+
+// The same function can be implemented using async await
+
+const getData = async function (){
+    const [users, posts, comments] = await Promise.all(urls.map(url =>{
+        return fetch(url).then(resp => resp.json())
+    }))
+    console.log("Users", users)
+    console.log("Posts", posts)
+    console.log("Comments", comments)
+
+    
+}
+
+    
+
