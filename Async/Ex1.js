@@ -23,10 +23,8 @@ async function weather(){
     const weatherK = await weatherKtm
     const weatherP = await weatherPkr   // This function awaits untill the promise if fulfilled
 
-    return [weatherK, weatherP]
+    console.log(weatherK, weatherP) 
 
 }
 
-weather().then((result) =>{
-    console.log(result)  
-})
+weather()
