@@ -12,3 +12,14 @@
  }
 
  addNumber(5,4,displayResult)
+
+ // callback is mostly used in asynchronous function
+
+ async function fetchUsers(){
+    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const jsonResp = await response.json()
+    console.log(jsonResp)
+ }
+
+//  const button = document.getElementById("button");
+ button.addEventListener("click", fetchUsers) //here fetchUsers is a callback function
