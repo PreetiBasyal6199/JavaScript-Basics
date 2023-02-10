@@ -44,4 +44,8 @@ var arrow_names = persons.map((person) => person.name)
 console.log(arrow_names)            //  [ 'Ram', 'Shyam', 'Gita', 'Hari', 'Nilam', 'Mina' ]
 
 
+let arrar2 = [1,2,3,4,5]
+
+console.log(arrar2.map(item => item *2))            //  [ 2, 4, 6, 8, 10 ]
+
 

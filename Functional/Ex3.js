@@ -25,3 +25,7 @@ console.log(total)              //1500
 var arrow_total = items.reduce(((sum, item)=>sum+item.price ), 0)
 
 console.log(arrow_total)            //1500
+
+
+let arr2 = [1,2,3,4]
+console.log(arr2.reduce((item, sum) => item + sum))
