@@ -12,5 +12,17 @@ finally{
     console.log("Hey you got the solution")       // This block of code is always executed
 }   
 
-// Asynchronous code Error handling
+// Example 2
+
+try{
+    let age = prompt("enter the age") ;
+    if (age >100){
+        throw new Error("Invalid Age")          // throwing error
+    }
+    console.log("My age is", +age)
+
+}
+catch(error){
+    console.log(error)
+}
 
