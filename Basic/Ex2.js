@@ -38,3 +38,8 @@ console.log(myArray.flat())                 //[12,15,16,17,18,19]
 
 const myArray1 = [1,2,3,4,5]                //The flatMap() method first maps all elements of an Array and then creates a new array by flattening the array.
 console.log(myArray1.flatMap((x)=> x*2))    //[2,4,6,8,10]
+
+
+let newstr = "Hello I am there always"
+iterator = newstr.matchAll("there")
+console.log(Array.from(iterator))    //array
